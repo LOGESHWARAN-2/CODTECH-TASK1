@@ -1,0 +1,43 @@
+
+import java.util.*;
+public class Calculator {
+
+	public static void main(String[] args) {
+		Scanner s= new Scanner(System.in);
+		System.out.println("Enter two numbers:");
+		int num1=s.nextInt();
+		int num2=s.nextInt();
+		s.nextLine();
+		System.out.println("Enter the Arithmentic operation to perform:");
+		String str=s.nextLine();
+       
+		switch(str) {
+		
+		case "+":
+			int num3=num1+num2;
+			System.out.println(num3);
+			break;
+			
+		case "-":
+			int num4=num1-num2;
+			System.out.println(num4);
+			break;
+			
+		case "*":
+			int num5=num1*num2;
+			System.out.println(num5);
+			break;
+			
+		case "/":
+			if(num2!=0) {
+			int num6=num1/num2;
+			System.out.println(num6);
+			break;
+		}
+			
+		default:
+			System.out.println("Entered invalid input...");
+		}
+	}
+
+}
